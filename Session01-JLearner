@@ -1,0 +1,39 @@
+// Methods, loops
+
+/* Declare a method that computes the average (rounded toward zero) between two given integers (Note: in Java, if x and y are of type int, x / y is the quotient of
+x and y, rounded toward zero.) */
+
+int avg(int x, int y) {
+	return (x + y) / 2;
+}
+
+/* Declare a method that computes x to the power of y, for nonnegative y (iterative implementation) */
+
+int pow(int base, int exponent) {
+    int result = 1;
+    while (exponent != 0) {
+      result *= base;
+      --exponent;
+    }
+  return result;
+}
+
+/* Declare a method that computes x to the power of y, for nonnegative y (recursive implementation) */
+
+/* Declare a method that computes the square root (rounded down) of a given nonnegative integer. (Find the largest integer whose square is not greater than the
+given number.) */
+
+int sqrt(int x) {
+  int sqrt = 1;
+  for (int i=1;i*i<=x;i++){
+  	sqrt = i;
+  }
+  return sqrt;
+}
+
+int sqrt(int x) {
+  int result = 0;
+	while (result * result <= x)
+		result++;
+	return result - 1;
+}
